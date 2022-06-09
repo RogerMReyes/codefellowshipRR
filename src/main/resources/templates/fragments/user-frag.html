@@ -8,13 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>Huzzah</h1>
-<h3 th:if="${user != null}" th:text="${'Current user: ' + user.username}"></h3>
-<h1>This is me. Hello</h1>
-
-<a th:if="!${user}" href="/login">Log In</a>
-<br>
-<a th:if="!${user}" href="/signup">Or Sign Up</a>
-<a th:if="${user}" href="/logout">Log Out</a>
+<h3 th:text="'Current User Id: ' + ${dbUserId}"></h3>
+<h3 th:text="'Current User: ' + ${dbUsername}"></h3>
 </body>
 </html>
